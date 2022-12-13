@@ -12,9 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Zechariahmn/book-search-engine"
+    "url": "git+https://github.com/Zechariahmn/book-search-engine.git"
   },
-  "author": "Zecahriah Naitram",
+  "author": "Zechariah Naitram",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Zechariahmn/book-search-engine/issues"
@@ -22,5 +22,8 @@
   "homepage": "https://github.com/Zechariahmn/book-search-engine#readme",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
