@@ -10,6 +10,7 @@ const resolvers = {
                 .select('-__v -password')
                 return userData;
             }
+            
             throw new AuthenticationError('Not logged in');
         }
     },
@@ -27,10 +28,12 @@ const resolvers = {
             if (!user) {
                 throw new AuthenticationError('Incorrect credentials')
             }
+            
             const correctPw = await user.isCorrectPassword(password);
             if(!correctPw) {
                 throw new AuthenticationError('Incorrect credentials')
             }
+            
             const token = signToken(user);
             return { token, user };
         },
@@ -42,8 +45,10 @@ const resolvers = {
                     { $addToSet: {savedBooks: book} },
                     { new: true }
                 )
+                
                 return updatedUser;
             }
+            
             throw new AuthenticationError('You need to be logged in!')
         },
 
@@ -54,6 +59,7 @@ const resolvers = {
                     { $pull: { savedBooks: { bookId: bookId } } },
                     { new: true }
                 )
+                
                 return updatedUser;
             }
         }
