@@ -9,7 +9,7 @@
     "watch": "nodemon server.js"
   },
   "keywords": [],
-  "author": "Mateo Wallace",
+  "author": "Zechariah Naitram",
   "license": "MIT",
   "dependencies": {
     "apollo-server-express": "^3.6.2",
