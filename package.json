@@ -21,13 +21,14 @@
   },
   "homepage": "https://github.com/Zechariahmn/book-search-engine#readme",
   "devDependencies": {
-    "concurrently": "^5.1.0"
+    "concurrently": "^5.2.0"
   },
   "engines": {
     "node": "16.x"
   },
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
-    "apollo-boost": "^0.4.9"
+    "apollo-server-express": "^2.19.2",
+    "if-env": "^1.0.4"
   }
 }
