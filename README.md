@@ -22,6 +22,8 @@ To install necessary dependencies, run the following command:
 ```npm i``` ```npx create-react-app```
 
 ## Usage
+![Screenshot 2022-12-15 122621](https://user-images.githubusercontent.com/110499007/207927849-cdbbaad9-3fed-4ab9-b64f-2e6888c5d704.png)
+
 For users to use this repo they must first clone it down and ```npm install``` in order to have the necessary dependencies and devdependencies for th application to work and function properly. The user can then run the command ```npm run develop``` in order to start the application and then the user will be able to search for new books they wish to find, they can also choose to signup and make a user account.
 
 ## URL
