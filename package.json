@@ -4,6 +4,7 @@
   "description": "MERN Full Stack Book Search Application",
   "main": "server/server.js",
   "scripts": {
+    "heroku-postbuild": "npm run production",
     "start": "node server/server.js --ignore client",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
@@ -26,8 +27,5 @@
   "engines": {
     "node": "16.8.0",
     "npm": "8.19.2"
-  },
-  "dependencies": {
-    "require-stack": "^1.0.2"
   }
 }
