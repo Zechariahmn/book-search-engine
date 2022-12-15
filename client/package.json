@@ -19,6 +19,7 @@
     "web-vitals": "^0.2.4"
     },
     "scripts": {
+      "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
       "heroku-prebuild": "npm install -g serve",
       "start": "react-scripts start",
       "build": "react-scripts build",
