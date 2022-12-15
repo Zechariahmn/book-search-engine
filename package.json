@@ -26,5 +26,8 @@
   "engines": {
     "node": "16.8.0",
     "npm": "8.19.2"
+  },
+  "dependencies": {
+    "require-stack": "^1.0.2"
   }
 }
