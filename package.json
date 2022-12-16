@@ -8,24 +8,11 @@
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "heroku-postbuild": "cd client && npm run build"
+    "seed": "cd server && npm run seed"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zechariahmn/book-search-engine.git"
-  },
-  "author": "Zechariah Naitram",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Zechariahmn/book-search-engine/issues"
-  },
-  "homepage": "https://github.com/Zechariahmn/book-search-engine#readme",
-  "devDependencies": {
-    "concurrently": "^5.2.0"
-  },
+
   "engines": {
-    "node": "16.8.0",
+    "node": "16.x",
     "npm": "8.19.2"
   }
 }
